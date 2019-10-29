@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  lembretesApiUrl: 'https://devreminder.herokuapp.com'
+  lembretesApiUrl: 'https://deviup.com.br:3001/api'
 };

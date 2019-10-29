@@ -14,10 +14,10 @@
         <div class="col-md-8 mx-auto">
             <div class="card">
                 <div class="card-header">
-                    <span class="badge badge-pill">
+                    <span class="badge badge-pill"
                         [class.badge-danger]="lembrete.prioridade == 'ALTA' "
                         [class.badge-warning]="lembrete.prioridade == 'MEDIA' "
-                        [class.badge-info]="lembrete.prioridade == 'BAIXA' "
+                        [class.badge-info]="lembrete.prioridade == 'BAIXA' ">
                         PRIORIDADE {{ lembrete.prioridade }}
                     </span>
                 </div>
@@ -26,8 +26,8 @@
                 </div>
                 <div class="card-footer">
                     <div class="text-right">
-                        <button type="button" class="btn btn-primary btn-sm ml-1" routerLink="/lembrete/editar/{{lembrete.id}}"></button>
-                        <button type="button" class="btn btn-danger btn-sm ml-1" (click)="deletaLembrete(lembrete.id)">X</button>
+                        <button type="button" class="btn btn-primary btn-sm ml-1 fa fa-pencil" routerLink="/lembrete/editar/{{lembrete.id}}"></button>
+                        <button type="button" class="btn btn-danger btn-sm ml-1 fa fa-trash" (click)="deletaLembrete(lembrete.id)"></button>
                     </div>
                 </div>
             </div>
